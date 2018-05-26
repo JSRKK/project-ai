@@ -1,0 +1,16 @@
+label {
+    display: block;
+    color: #7d7d7d;
+  }
+  
+  .floatBlock {
+    margin: 0 1.81em 0 0;
+  }
+
+  .radio-inValidate{
+    background-color: #a94442; 
+  } 
+
+  .container{
+    margin-top: 5%;
+  }

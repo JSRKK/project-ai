@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hepatitis</title>
+    <link rel="stylesheet" href="css/vendors/style.css">
+    <link rel="stylesheet" href="css/wizard-step/jquery.steps.css">
+    <link rel="stylesheet" href="css/custom/custom.css">
+    <link rel="stylesheet" href="css/sweetalert2/sweetalert2.css">
+</head>
+
+<body>
+    <div class="header clearfix">
+        <div class="header-right">
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
+            <div class="clearfix">
+                <h4 class="text-blue">Hepatitis</h4>
+                <p class="mb-30 font-14">jQuery Step wizard</p>
+            </div>
+            <div class="wizard-content">
+                <div class="tab-wizard wizard-circle wizard vertical">
+                    <h5>Step 1</h5>
+                    <section class="section-1">
+                        <form class="form-1">
+                            <div class="form-group row">
+                                <div class="col-md-3 col-sm-12 offset-md-1">
+                                    <label class="weight-600">Age:</label>
+                                    <input class="form-control" id="Age" type="number" placeholder="" >
+                                </div>
+                                <div class="col-md-5 col-sm-12 offset-md-2">
+                                    <label class="weight-600">Malaise:</label>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Malaise1" name="Malaise" value="1" class="custom-control-input">
+                                        <label class="custom-control-label" for="Malaise1">yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Malaise2" name="Malaise" value="0" class="custom-control-input">
+                                        <label class="custom-control-label" for="Malaise2">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-4 col-sm-12 offset-md-1">
+                                    <label class="weight-600">Sex:</label>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Sex1" name="Sex" value="male" class="custom-control-input">
+                                        <label class="custom-control-label" for="Sex1">male</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Sex2" name="Sex" value="female" class="custom-control-input">
+                                        <label class="custom-control-label" for="Sex2">female</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 offset-md-1">
+                                    <label class="weight-600">Anorexia:</label>
+                                    <div class="custom-control  custom-radio mb-5">
+                                        <input type="radio" id="Anorexia1" name="Anorexia" value="1" class="custom-control-input">
+                                        <label class="custom-control-label" for="Anorexia1">yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Anorexia2" name="Anorexia" value="0" class="custom-control-input">
+                                        <label class="custom-control-label" for="Anorexia2">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-5 col-sm-12 offset-md-1">
+                                    <label class="weight-600">Steroid:</label>
+                                    <div class="custom-control  custom-radio mb-5">
+                                        <input type="radio" id="Steroid1" name="Steroid" value="1" class="custom-control-input">
+                                        <label class="custom-control-label" for="Steroid1">yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Steroid2" name="Steroid" value="0" class="custom-control-input">
+                                        <label class="custom-control-label" for="Steroid2">no</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <label class="weight-600">Liver big:</label>
+                                    <div class="custom-control  custom-radio mb-5">
+                                        <input type="radio" id="LiverBig1" name="LiverBig" value="1" class="custom-control-input">
+                                        <label class="custom-control-label" for="LiverBig1">yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="LiverBig2" name="LiverBig" value="0" class="custom-control-input">
+                                        <label class="custom-control-label" for="LiverBig2">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-5 col-sm-12 offset-md-1">
+                                    <label class="weight-600">Antivirals:</label>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Antivirals1" name="Antivirals" value="1" class="custom-control-input">
+                                        <label class="custom-control-label" for="Antivirals1">yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="Antivirals2" name="Antivirals" value="0" class="custom-control-input">
+                                        <label class="custom-control-label" for="Antivirals2">no</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <label class="weight-600">Liver firm:</label>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="LiverFirm1" name="LiverFirm" value="1" class="custom-control-input">
+                                        <label class="custom-control-label" for="LiverFirm1">yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="LiverFirm2" name="LiverFirm" value="0" class="custom-control-input">
+                                        <label class="custom-control-label" for="LiverFirm2">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <!-- Step 2 -->
+                    <h5>Step 2</h5>
+                    <section class="section-2">
+                        <div class="form-group row">
+                            <div class="col-md-5 col-sm-12 offset-md-1">
+                                <label class="weight-600">Fatigue:</label>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Fatigue1" name="Fatigue" value="1" class="custom-control-input">
+                                    <label class="custom-control-label" for="Fatigue1">yes</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Fatigue2" name="Fatigue" value="0" class="custom-control-input">
+                                    <label class="custom-control-label" for="Fatigue2">no</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <label class="weight-600">Bilirubin:</label>
+                                <input class="form-control" id="Bilirubin" type="number" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-5 col-sm-12 offset-md-1">
+                                <label class="weight-600">Spiders:</label>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Spiders1" name="Spiders" value="1" class="custom-control-input">
+                                    <label class="custom-control-label" for="Spiders1">yes</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Spiders2" name="Spiders" value="0" class="custom-control-input">
+                                    <label class="custom-control-label" for="Spiders2">no</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <label class="weight-600">ALK Phosphate:</label>
+                                <input class="form-control" id="ALKPhosphate" type="number" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-5 col-sm-12 offset-md-1">
+                                <label class="weight-600">Ascites:</label>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Ascites1" name="Ascites" value="1" class="custom-control-input">
+                                    <label class="custom-control-label" for="Ascites1">yes</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Ascites2" name="Ascites" value="0" class="custom-control-input">
+                                    <label class="custom-control-label" for="Ascites2">no</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <label class="weight-600">SGOT:</label>
+                                <input class="form-control" id="SGOT" type="number" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-5 col-sm-12 offset-md-1">
+                                <label class="weight-600">Spleen palpable:</label>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="SpleenPalpable1" name="SpleenPalpable" value="1" class="custom-control-input">
+                                    <label class="custom-control-label" for="SpleenPalpable1">yes</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="SpleenPalpable2" name="SpleenPalpable" value="0" class="custom-control-input">
+                                    <label class="custom-control-label" for="SpleenPalpable2">no</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <label class="weight-600">Albumin:</label>
+                                <input class="form-control" id="Albumin" type="number" placeholder="">
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Step 3 -->
+                    <h5>Step 3</h5>
+                    <section class="section-3">
+                        <div class="form-group row">
+                            <div class="col-md-5 col-sm-12 offset-md-1">
+                                <label class="weight-600">Varices:</label>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Varices1" name="Varices" value="1" class="custom-control-input">
+                                    <label class="custom-control-label" for="Varices1">yes</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Varices2" name="Varices" value="0" class="custom-control-input">
+                                    <label class="custom-control-label" for="Varices2">no</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <label class="weight-600">Prothrombin Time :</label>
+                                <input class="form-control" id="Protime" type="number" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-5 col-sm-12 offset-md-1">
+                                <label class="weight-600">Histology:</label>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Histology1" name="Histology" value="1" class="custom-control-input">
+                                    <label class="custom-control-label" for="Histology1">yes</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-5">
+                                    <input type="radio" id="Histology2" name="Histology" value="0" class="custom-control-input">
+                                    <label class="custom-control-label" for="Histology2">no</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendors/script.js"></script>
+    <script src="js/wizard-step/jquery.steps.js"></script>
+    <script src="js/custom/custom.js"></script>
+    <script src="js/sweetalert2/sweetalert2.all.js"></script>
+    <script src="js/sweetalert2/sweet-alert.init.js"></script>
+</body>
+
+</html>
