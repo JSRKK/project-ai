@@ -5,7 +5,7 @@ $(function () {
     var check;
     var genericCloseBtnHtml = '<button onclick="$(this).closest(\'div.popover\').popover(\'hide\');" type="button" class="close color" aria-hidden="true" style="color:#ffffff">&times;</button>';
     $('#about-info').popover({
-        title: "รายละเอียกแอตทริบิวต์"+genericCloseBtnHtml,
+        title: "รายละเอียดแอตทริบิวต์"+genericCloseBtnHtml,
         html: true,
         toggle: "popover",
         placement: "bottom",
