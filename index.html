@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hepatitis</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vendors/style.css">
     <link rel="stylesheet" href="css/wizard-step/jquery.steps.css">
     <link rel="stylesheet" href="css/custom/custom.css">
     <link rel="stylesheet" href="css/sweetalert2/sweetalert2.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
 </head>
 
 <body>
     <div class="header clearfix">
         <div class="header-right">
-            
+            <a href="#"><h4 class="text-blue">Hepatitis</h4></a>
+            <div class="button-right">
+                <button class="btn btn-info" id="about-info"><i class="fas fa-info-circle"></i> About Info</button>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
             <div class="clearfix">
-                <h4 class="text-blue">Hepatitis</h4>
-                <p class="mb-30 font-14">jQuery Step wizard</p>
+                <h5 class="text-blue">Information for Hepatitis</h5>
+                <p class="mb-30 font-14"></p>
             </div>
             <div class="wizard-content">
                 <div class="tab-wizard wizard-circle wizard vertical">
@@ -32,7 +39,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3 col-sm-12 offset-md-1">
                                     <label class="weight-600">Age:</label>
-                                    <input class="form-control" id="Age" type="number" placeholder="" >
+                                    <input class="form-control" id="Age" type="number" placeholder="">
                                 </div>
                                 <div class="col-md-5 col-sm-12 offset-md-2">
                                     <label class="weight-600">Malaise:</label>
@@ -231,9 +238,10 @@
             </div>
         </div>
     </div>
-
+    
     <script src="js/vendors/script.js"></script>
     <script src="js/wizard-step/jquery.steps.js"></script>
+    <script src="js/custom/declare-variable.js"></script>
     <script src="js/custom/custom.js"></script>
     <script src="js/sweetalert2/sweetalert2.all.js"></script>
     <script src="js/sweetalert2/sweet-alert.init.js"></script>

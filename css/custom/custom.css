@@ -12,5 +12,27 @@ label {
   } 
 
   .container{
-    margin-top: 5%;
+    padding: 70px 0 0px 0;
   }
+  .button-right{
+    float: right;
+    padding: 20px 20px 20px 0;
+  }
+  .popover{
+    max-width: 30%;
+    height: 60%;
+    /* overflow: hidden;  */
+  }
+.popover-header{
+    text-align: center;
+    color: white;
+    background: #c5c9ca;
+}
+.popover-body{
+    background: rgba(238, 238, 238, 0.466);
+    height: 92%;    
+    overflow-y: scroll;    
+}
+button .color{
+  color: #ffffff;
+}

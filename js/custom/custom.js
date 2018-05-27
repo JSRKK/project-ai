@@ -1,11 +1,23 @@
 
 $(function () {
-    var valueTest = [[38, "female", "0", "0", "1", "1", "1", "0", "1", "0", "0", "0", "0", "0.6", "76", "18", "4.4", "84", "1", "LIVE"],
-    [50, "male", "0", "0", "1", "0", "0", "0", "1", "1", "1", "0", "0", "0.9", "230", "117", "3.4", "41", "1", "LIVE"],
-    [47, "female", "1", "0", "0", "0", "0", "1", "0", "0", "1", "0", "1", "2", "84", "23", "4.2", "66", "1", "DIE"]]
-
+    
     var checkValidate;
     var check;
+    var genericCloseBtnHtml = '<button onclick="$(this).closest(\'div.popover\').popover(\'hide\');" type="button" class="close color" aria-hidden="true" style="color:#ffffff">&times;</button>';
+    $('#about-info').popover({
+        title: "รายละเอียกแอตทริบิวต์"+genericCloseBtnHtml,
+        html: true,
+        toggle: "popover",
+        placement: "bottom",
+        content: function(){
+            var html = ""
+            for (var i = 0; i < descriptions.length; i++) {
+                html += '<p>'+descriptions[i]+'</p>';
+            }
+            // html = '<ui>' + html + '</ui>'
+            return html;
+        }
+    });
     $(".tab-wizard").steps({
         headerTag: "h5",
         bodyTag: "section",
